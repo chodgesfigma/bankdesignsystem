@@ -1,24 +1,67 @@
+:root {
+  --background-primary: #FFFFFF;
+  --background-secondary: #F1F1F1;
+  --background-invert: #303030;
+  --background-brand: #006A4D;
+  --background-success: #77B800;
+  --background-warning: #C8D882;
+  --background-danger: #DC2A4D;
 
+  --border-primary: #FFFFFF;
+  --border-secondary: #F1F1F1;
+  --border-invert: #303030;
+  --border-brand: #006A4D;
+  --border-success: #77B800;
+  --border-warning: #C8D882;
+  --border-danger: #DC2A4D;
 
+  --text-primary: #FFFFFF;
+  --text-secondary: #F1F1F1;
+  --text-invert: #303030;
+  --text-brand: #006A4D;
+  --text-success: #77B800;
+  --text-warning: #C8D882;
+  --text-danger: #DC2A4D;
 
+  --icon-primary: #FFFFFF;
+  --icon-secondary: #F1F1F1;
+  --icon-invert: #303030;
+  --icon-brand: #006A4D;
+  --icon-success: #77B800;
+  --icon-warning: #C8D882;
+  --icon-danger: #DC2A4D;
+
+  --spacing-none: 0;
+  --spacing-xxsmall: 4px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-xlarge: 40px;
+  --spacing-xxlarge: 56px;
+
+  --radius-none: 0;
+  --radius-small: 8px;
+  --radius-medium: 16px;
+  --radius-large: 24px;
+}
 
 .storybook-button {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+  display: flex;
+  min-width: 360px;
+  padding: var(--spacing-small) var(--spacing-medium);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-small);
 }
 .storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
+  color: var(--text-primary);
+  background-color: var(--background-brand);
+  border: 1px solid var(--background-brand);
 }
 .storybook-button--secondary {
   color: #333;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
 .storybook-button--small {
   font-size: 12px;

@@ -56,7 +56,7 @@
 .storybook-button--primary {
   color: var(--text-primary);
   background-color: var(--background-brand);
-  border: 1px solid var(--background-brand);
+  border: 1px solid var(--border-brand);
 }
 .storybook-button--secondary {
   color: #333;

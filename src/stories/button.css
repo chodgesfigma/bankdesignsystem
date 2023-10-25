@@ -59,18 +59,7 @@
   border: 1px solid var(--border-brand);
 }
 .storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-}
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
-}
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
-}
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+  color: var(--text-brand);
+  background-color: var(--background-primary);
+  border: 1px solid var(--border-brand);
 }

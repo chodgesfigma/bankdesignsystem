@@ -5,13 +5,11 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ buttonType, iconLeft, buttonLabel, iconRight, label, ...props }) => {
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
+      className={['storybook-button', `storybook-button--${buttonType}`].join(' ')}
       {...props}
     >
       {label}
@@ -23,15 +21,19 @@ Button.propTypes = {
   /**
    * Is this the principal call to action on the page?
    */
-  primary: PropTypes.bool,
+  buttonType: PropTypes.oneOf(['primary', 'secondary']),
   /**
-   * What background color to use
+   * Does this button have icon left or not?
    */
-  backgroundColor: PropTypes.string,
+  iconLeft: PropTypes.bool,
   /**
-   * How large should the button be?
+   * Does this button have text or not?
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  buttonLabel: PropTypes.bool,
+  /**
+   * Does this button have icon right or not?
+   */
+  iconRight: PropTypes.bool,
   /**
    * Button contents
    */
@@ -43,8 +45,9 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
+  buttonType: 'primary',
+  iconLeft: false,
+  buttonLabel: true,
+  iconRight: false,
   onClick: undefined,
 };

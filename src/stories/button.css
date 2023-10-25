@@ -48,7 +48,6 @@
 .storybook-button {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: flex;
-  min-width: 360px;
   padding: var(--spacing-small) var(--spacing-medium);
   justify-content: center;
   align-items: center;

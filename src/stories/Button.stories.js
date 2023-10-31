@@ -7,12 +7,16 @@ export default {
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File",
+    },
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    
   },
 };
 
@@ -20,9 +24,10 @@ export default {
 export const Primary = {
   args: {
     buttonType: 'primary',
-    iconLeft: false,
-    buttonLabel: true,
-    iconRight: false,
+    state: 'default',
+    showIconLeft: false,
+    showLabel: true,
+    showIconRight: false,
     label: 'Button',
   },
 };
@@ -30,9 +35,10 @@ export const Primary = {
 export const Secondary = {
   args: {
     buttonType: 'secondary',
-    iconLeft: false,
-    buttonLabel: true,
-    iconRight: false,
+    state: 'default',
+    showIconLeft: false,
+    showLabel: true,
+    showIconRight: false,
     label: 'Button',
   },
 };

@@ -52,6 +52,8 @@
   justify-content: center;
   align-items: center;
   gap: var(--spacing-small);
+  font-size: 16px;
+  min-height: 40px;
 }
 .storybook-button--primary {
   color: var(--text-primary);
@@ -62,4 +64,25 @@
   color: var(--text-brand);
   background-color: var(--background-primary);
   border: 1px solid var(--border-brand);
+}
+
+.btn-icon{
+  height: 24px;
+  width: 24px;
+}
+
+.btn-icon--left{
+  
+}
+
+.btn-icon--right{
+  
+}
+
+.storybook-button--primary .btn-icon{
+  fill: var(--text-primary);
+}
+
+.storybook-button--secondary .btn-icon{
+  fill: var(--text-brand);
 }
